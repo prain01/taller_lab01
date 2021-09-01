@@ -78,7 +78,7 @@ public class Taller01Sismos {
 
     public static void caso2(double[] sismos){
         if (validarSismosVacio(sismos)){
-            mostrarDouble(buscarMayorSismo(sismos));
+            System.out.println("Sismo de mayor magnitud: "+buscarMayorSismo(sismos));
         }else{
             System.out.println("No se registran datos de sismos (arreglo vacio");
         }
@@ -86,7 +86,7 @@ public class Taller01Sismos {
 
     public static void caso3(double[] sismos){
         if (validarSismosVacio(sismos)){
-            mostrarInt(contarSismos(sismos,5.0));
+            System.out.println("Sismos mayores a 5.0: "+contarSismos(sismos,5.0));
         }else{
             System.out.println("No se registran datos de sismos (arreglo vacio");
         }
@@ -124,14 +124,6 @@ public class Taller01Sismos {
             }
         }
         return  mayor;
-    }
-
-    public static void mostrarDouble(double num){
-        System.out.println(num);
-    }
-
-    public static void mostrarInt(int num){
-        System.out.println(num);
     }
 
     public static int contarSismos( double [] sismos, double gradoSismo){
