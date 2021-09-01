@@ -126,6 +126,7 @@ public class Taller01Sismos {
         return  mayor;
     }
 
+
     public static int contarSismos( double [] sismos, double gradoSismo){
         int     j = 0;
         for (double sismo : sismos) {
